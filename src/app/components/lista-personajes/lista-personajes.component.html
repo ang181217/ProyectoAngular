@@ -1,0 +1,7 @@
+<div class="lista-personajes">
+  <div class="personaje" *ngFor="let personaje of personajesPaginados" (click)="openDialog(personaje.id)">
+    <h2>{{ personaje.name }}</h2>
+    <img [src]="personaje.image" alt="{{ personaje.name }}">
+  </div>
+</div>
+

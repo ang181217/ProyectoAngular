@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Detalles del Personaje</h1>
+<div mat-dialog-content *ngIf="personaje">
+<img [src]="personaje.image" alt="{{ personaje.name }}">
+  <p>Nombre: {{ personaje.name }}</p>
+  <p>Estado: {{ personaje.status }}</p>
+  <p>Especie: {{ personaje.species }}</p>
+  <p>Género: {{ personaje.gender }}</p>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cerrar</button>
+</div>
